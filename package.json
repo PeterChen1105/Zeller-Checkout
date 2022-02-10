@@ -1,0 +1,34 @@
+{
+  "name": "zeller-backend-ts-coding-challenge",
+  "version": "1.0.0",
+  "description": "Zeller Backend TypeScript Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node ./build/index.js",
+    "prebuild": "rimraf build",
+    "build": "tsc",
+    "test": "jest --watchAll src/**",
+    "test:e2e": "jest --watchAll test/**",
+    "test:all": "jest --watchAll",
+    "test:coverage": "jest --collectCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterChen1105/Zeller-Checkout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "jest": "^26.6.3",
+    "jest-ts-webcompat-resolver": "^1.0.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.5.2",
+    "typescript": "^4.2.2"
+  }
+}
